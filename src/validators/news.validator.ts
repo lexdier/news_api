@@ -42,4 +42,8 @@ export class UpdateNewsValidator {
     @IsOptional()
     @IsString()
     tags: string[];
+
+    @IsOptional()
+    @IsString()
+    source: string;
 }

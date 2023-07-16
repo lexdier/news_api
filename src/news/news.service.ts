@@ -29,6 +29,7 @@ export class NewsService {
         news.author = validator.author || news.author
         news.description = validator.description || news.description
         news.tags = validator.tags || news.tags
+        news.source = validator.source || news.source
 
         await news.save()
         return news
