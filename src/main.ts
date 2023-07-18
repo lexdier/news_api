@@ -6,8 +6,8 @@ import {ValidationPipe} from "@nestjs/common";
 async function bootstrap() {
     const app = await NestFactory.create(AppModule, {cors: true});
     const config = new DocumentBuilder()
-        .setTitle('Crypto.api')
-        .setDescription('This is the Crypto API')
+        .setTitle('News.api')
+        .setDescription('This is the News API')
         .setVersion('1.0')
         .build();
 
