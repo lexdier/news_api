@@ -1,19 +1,24 @@
-import {IsOptional, IsString} from "class-validator";
+import {IsNotEmpty, IsOptional, IsString} from "class-validator";
 
 export class CreateNewsValidator {
 
+    @IsNotEmpty()
     @IsString()
     readonly title: string;
 
+    @IsNotEmpty()
     @IsString()
     readonly description: string;
 
+    @IsNotEmpty()
     @IsString()
     readonly url: string;
 
+    @IsNotEmpty()
     @IsString()
     readonly author: string;
 
+    @IsNotEmpty()
     @IsString()
     readonly source: string;
 
