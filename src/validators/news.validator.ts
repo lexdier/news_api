@@ -1,4 +1,4 @@
-import {IsNotEmpty, IsOptional, IsString} from "class-validator";
+import {IsArray, IsNotEmpty, IsOptional, IsString} from "class-validator";
 
 export class CreateNewsValidator {
 
@@ -22,7 +22,7 @@ export class CreateNewsValidator {
     @IsString()
     readonly source: string;
 
-    @IsString()
+    @IsArray()
     readonly tags: string[];
 }
 
